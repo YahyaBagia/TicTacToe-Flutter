@@ -196,47 +196,45 @@ class _GameScreenState extends State<GameScreen> {
             child: Column(children: [
               Expanded(
                 flex: 3,
-                child: Column(children: [
-                  Expanded(
-                    flex: 1,
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceAround,
-                      children: [
-                        Column(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            Text(
-                              "Player O",
-                              style: customFontWhite,
-                              textAlign: TextAlign.center,
-                            ),
-                            Text(
-                              "$oScore",
-                              style: customFontWhite.copyWith(fontSize: 40),
-                              textAlign: TextAlign.center,
-                            ),
-                          ],
-                        ),
-                        const SizedBox(width: 30),
-                        Column(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            Text(
-                              "Player X",
-                              style: customFontWhite,
-                              textAlign: TextAlign.center,
-                            ),
-                            Text(
-                              "$xScore",
-                              style: customFontWhite.copyWith(fontSize: 40),
-                              textAlign: TextAlign.center,
-                            ),
-                          ],
-                        ),
-                      ],
-                    ),
-                  )
-                ]),
+                child: Padding(
+                  padding: const EdgeInsets.only(top: 18.0),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
+                    children: [
+                      Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Text(
+                            "Player O",
+                            style: customFontWhite,
+                            textAlign: TextAlign.center,
+                          ),
+                          Text(
+                            "$oScore",
+                            style: customFontWhite.copyWith(fontSize: 40),
+                            textAlign: TextAlign.center,
+                          ),
+                        ],
+                      ),
+                      const SizedBox(width: 30),
+                      Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Text(
+                            "Player X",
+                            style: customFontWhite,
+                            textAlign: TextAlign.center,
+                          ),
+                          Text(
+                            "$xScore",
+                            style: customFontWhite.copyWith(fontSize: 40),
+                            textAlign: TextAlign.center,
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
+                ),
               ),
               Expanded(
                 flex: 12,
